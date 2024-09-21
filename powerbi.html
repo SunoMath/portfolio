@@ -29,6 +29,7 @@
             width: 48%; /* Set each dashboard to take 48% of container's width */
             margin-bottom: 20px; /* Margin between sections */
         }
+
         /* Styling for the headings before each dashboard */
         h4 {
             font-size: 20px; /* Adjust the font size here */
@@ -48,15 +49,11 @@
             color: #333; /* Change the text color if needed */
         }
 
-        /* Smaller heading styling */
-        h4 {
-            font-size: 18px;
-            font-family: sans-serif;
-            font-weight:lighter;
-            font-style: normal;
-            text-align: center;
-            margin: 20px 0 10px;
-            color: #333;
+        /* Responsive styling for smaller screens */
+        @media screen and (max-width: 768px) {
+            .dashboard-section {
+                width: 100%; /* Make dashboards take up full width on small screens */
+            }
         }
 
     </style>
